@@ -69,7 +69,7 @@ function initializePlayer(client) {
                     name: 'Ora in riproduzione',
                     iconURL: 'https://cdn.discordapp.com/emojis/838704777436200981.gif' // Replace with actual icon URL
                 })
-                .setDescription('🎶 **Controls:**\n 🔁 `Loop`, ❌ `Disable`, ⏭️ `Skip`, 📜 `Queue`, 🗑️ `Clear`\n ⏹️ `Stop`, ⏸️ `Pause`, ▶️ `Resume`, 🔊 `Vol +`, 🔉 `Vol -`')
+                .setDescription('🎶 **Controlli:**\n 🔁 `Loop`, ❌ `Disable`, ⏭️ `Skip`, 📜 `Queue`, 🗑️ `Clear`\n ⏹️ `Stop`, ⏸️ `Pause`, ▶️ `Resume`, 🔊 `Vol +`, 🔉 `Vol -`')
                 .setImage('attachment://musicard.png')
                 .setColor('#FF7A00');
 
@@ -251,7 +251,7 @@ function formatTrack(track) {
 
 function toggleLoop(player, channel) {
     player.setLoop(player.loop === "track" ? "queue" : "track");
-    sendEmbed(channel, player.loop === "track" ? "🔁 **Track loop is activated!**" : "🔁 **Queue loop is activated!**");
+    sendEmbed(channel, player.loop === "track" ? "🔁 **Il loop della traccia è attivato!**" : "🔁 **Il loop della coda è attivato!**");
 }
 
 function disableLoop(player, channel) {
